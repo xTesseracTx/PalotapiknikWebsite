@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Palota Piknik</title>
+<meta charset="UTF-8" />
+<meta author="TesseracT">
+<meta description="A Palotapiknik fesztivál hivatalos oldala.">
+<meta keywrds="palota piknik, palota piknik, paltanegyed, fesztivál, étterem, étel, ital, zappa cafe, don leone, leonardo pizzeria, nostro gastronomy, darshan, fiktiv pub"
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Playfair+Display+SC:900' rel='stylesheet' type='text/css'>
+<!--[if lt IE 10]><link rel="stylesheet" type="text/css" href="css/styleIE.css" /><![endif]-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/queryLoader.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<!--[if lt IE 9]>
+            <script type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+          <![endif]-->
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="container">
+    <div class="content">
+      <div id="logo"> <a href="#"><img src="images/logo.png" alt="" width="177" height="149" /></a> </div>
+      <!-- ADD YOUR INTRO TEXT HERE -->
+      <h2 class="frame-1">A Palota Negyed szivében,</h2>
+      <h2 class="frame-2">A Mikszáth Kálmán téren,</h2>
+      <h2 class="frame-3">Fergeteges hangulat és káprázatos fogások,</h2>
+      <h2 class="frame-4">Bőséges választék minden alkalommal,</h2>
+      <h2 class="frame-5"><span>Palota Piknik</span></h2>
+      <!-- CIRCULAR BUTTON -->
+      <div class="circle-link"><a href="#" data-reveal-id="myModal">Info</a> </div>
+    </div>
+  </div>
+</div>
+<!-- END INTRO --> 
+<!-- DROP DOWN BOX STARTS -->
+<div id="myModal" class="reveal-modal">
+  <h1>Márton Napi Libanapok</h1>
+  <p>Lúdhús imádók figyelem! 
+    Több mint 20 féle libahúsból készült klasszikus és különleges ételt kóstolhattok most hétvégén 3 napon át a Mikszáth tér és a Krúdy utca vendéglátóhelyein, barátságos áron! </p>
+  <p>Az akcióban résztvevő éttermek:</p>
+  <h2  align="center"><a class="mainlink" href="http://www.darshan.hu/" target="_blank">Darshan Udvar</a> , <a class="mainlink" href="http://donleone.hu" target="_blank">Don Leone Étterem </a> , <a class="mainlink" href="http://www.fiktivpub.hu/" target="_blank"
+>Fiktiv Pub</a> , <a class="mainlink" href="https://plus.google.com/112755958008770246744/about?gl=hu&hl=en" target="_blank">Leonardo Pizzéria</a> , <a class="mainlink" href="http://www.nostrogastronomy.hu" target="_blank">Nostro Gastronomy</a> , <a class="mainlink" href="http://www.zappacaffe.hu/" target="_blank">Zappa Cafe</a></h2>
+<p align="center">A teljes menüsort megtekintheti <a class="mainlink" href="http://www.facebook.com/palotapiknik" target="_blank">  <img border="0" src="images/fb.png" alt="facebook"></a> oldalunkon. 
+  <!-- COUNTDOWN 
+            <div class="counter">
+              <div id="launch_date"></div>
+            </div>
+           END COUNTDOWN--> 
+  
+  <!-- COUNTDOWN - ADD YOUR DATE HERE--> 
+  <script type="text/javascript">
+              //<![CDATA[
+              $(document).ready(function ()
+              {
+                var austDay = new Date("January 1, 2014");
+                $('#launch_date').countdown(
+                {
+                  until: austDay,
+                  layout: '<ul class="countdown"><li><span class="number">{dn}<\/span><br/><span class="time">{dl}<\/span><\/li><li><span class="number">{hn}<\/span><br/><span class="time">{hl}<\/span><\/li><li><span class="number">{mn}<\/span><br/><span class="time">{ml}<\/span><\/li><li><span class="number">{sn}<\/span><br/><span class="time">{sl}<\/span><\/li><\/ul>'
+                });
+                $('#year').text(austDay.getFullYear());
+              });
+              //]]>
+            </script> 
+  
+  <!-- EMAIL UPDATES -->
+  <div class="details">
+    <form action="send.php" id="contact_form" method="post" name="contact_form">
+      <div id="email_input">
+        <input type="text" name="email" id="email" value="Iratkozz fel hirlevelünkre!"
+                  class="email requiredField" onfocus="if(this.value == 'Iratkozz fel hirlevelünkre!') 
+	{ this.value = ''; }" onblur="if(this.value == '') { this.value = 'Iratkozz fel hirlevelünkre!'; }"
+                  />
+        <input type="submit" id="submit" value="Elküld" />
+      </div>
+    </form>
+  </div>
+  
+  <!-- SOCIAL ICONS -->
+  <div id="social">
+    <div id="icons"> <a target="_blank" href="http://www.facebook.com/palotapiknik"><img src="images/facebook.png" width="32" height="32" alt="facebook" /></a> <a href="mailto:info@palotapiknik.hu"><img src="images/email.png" width="32" height="32" alt="email" /></a> </div>
+  </div>
+  
+  <!-- TWITTER 
+            	<h2>latest tweet</h2>
+				<div id="twitter-wrapper">
+				<div id="tweet"></div> --> 
+  
+  <!-- ADD YOUR TWITTER ID HERE - REPLACE JO PHILLIPS --> 
+  <script type="text/javascript">
+                //<![CDATA[
+                getTwitters('tweet',
+                {
+                  id: 'jo_phillips',
+                  count: 1,
+                  enableLinks: true,
+                  ignoreReplies: false,
+                  template: '<span class="twitterPrefix"><span class="twitterStatus">%text%<\/span>',
+                  newwindow: true
+                });
+                //]]>
+              </script> 
+  <!-- CLOSE BUTTON --> 
+  <a class="close-reveal-modal">&#215;</a> </div>
+</div>
+
+<!-- YOUR BACKGROUND IMAGE SETTINGS --> 
+<script type="text/javascript">
+	jQuery(function($){
+		$.supersized({
+		// Functionality
+		slide_interval : 3000,	// Length between transitions
+		transition : 1, // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+		transition_speed : 900, // Speed of transition
+		slides : [ // Slideshow Images
+			{image : 'images/1.jpg'},
+			{image : 'images/2.jpg'},
+			{image : 'images/3.jpg'},
+			{image : 'images/4.jpg'}
+			]
+			});
+		    });
+		</script> 
+<!-- PRELOADER --> 
+<script type='text/javascript'>
+    QueryLoader.init();
+</script>
+</body>
+</html>
